@@ -26,6 +26,7 @@ function viewCart() {
     var price = cart[i][key];
     item.push(key+" at $"+price);
   }
+  
     if(car.length==1) console.log (`In your cart, you have ${item[0]}.`);
     else if (cart.length ==2){
       console.log(`In your cart, you have ${item.join(' and ')}.`);
@@ -35,9 +36,10 @@ function viewCart() {
       item[cart.length-1] = `and ${item[cart.length - 1]}`;
       console.log(`In your cart, you have ${item.join(', ')}.`);
     }
+   return cart;  
   }
-  return cart;
-}
+ 
+
 
 function total() {
   // write your code here
