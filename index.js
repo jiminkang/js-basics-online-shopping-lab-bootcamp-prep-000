@@ -28,7 +28,7 @@ function viewCart() {
   }
     if(car.length==1) console.log ("In your cart, you have ${item[0]}.");
     else if (cart.length ==2){
-      console.log("In your cart, you have ${item.join(" and ")}.");
+      console.log(`In your cart, you have ${item.join(' and ')}.`);
       
     }
     else{
