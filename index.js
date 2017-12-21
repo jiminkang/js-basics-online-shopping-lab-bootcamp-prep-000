@@ -36,7 +36,6 @@ function viewCart() {
       console.log(`In your cart, you have ${item.join(', ')}.`);
     }
   }
-  
   return cart;
 }
 
