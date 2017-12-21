@@ -20,12 +20,20 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  var item =[];
   for (var i=0; i<cart.length;i++){
     var key = Ojbect.keys(cart[i])[0];
     var price = cart[i][key];
-    if(car.length==1) console.log ("In your cart you have ${Object.keys(cart[i])[0]} at ${cart[i][Object.keys(cart[i])[0]}.");
+    item.push(key+" at $"+price);
+  }
+    if(car.length==1) console.log ("In your cart, you have ${item[0]}.);
     else if (cart.length ==2){
+      console.log("In your cart, you have ${item.join(" and ")}.");
       
+    }
+    else{
+      item[cart.length-1] = "and {item[cart.length-1]}";
+      console.log("In your cart, you have ${item.join(", ")}.");
     }
   }
 }
