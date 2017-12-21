@@ -27,7 +27,7 @@ function viewCart() {
     item.push(key+" at $"+price);
   }
   
-    if(car.length==1) console.log (`In your cart, you have ${item[0]}.`);
+    if(cart.length==1) console.log (`In your cart, you have ${item[0]}.`);
     else if (cart.length ==2){
       console.log(`In your cart, you have ${item.join(' and ')}.`);
       
