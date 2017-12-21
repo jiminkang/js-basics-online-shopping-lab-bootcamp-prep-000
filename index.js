@@ -33,7 +33,7 @@ function viewCart() {
     }
     else{
       item[cart.length-1] = `and ${itemAndPrices[cart.length - 1]}`;
-      console.log("In your cart, you have ${item.join(", ")}.");
+      console.log(`In your cart, you have ${itemAndPrices.join(', ')}.`);
     }
   }
   
