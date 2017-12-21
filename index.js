@@ -22,7 +22,7 @@ function viewCart() {
   // write your code here
   var item =[];
   for (var i=0; i<cart.length;i++){
-    var key = Ojbect.keys(cart[i])[0];
+    var key = Object.keys(cart[i])[0];
     var price = cart[i][key];
     item.push(key+" at $"+price);
   }
