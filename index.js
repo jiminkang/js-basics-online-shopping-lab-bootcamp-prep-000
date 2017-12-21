@@ -21,6 +21,8 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   for (var i=0; i<cart.length;i++){
+    var key = Ojbect.keys(cart[i])[0];
+    var price = cart[i][key];
     if(car.length==1) console.log ("In your cart you have ${Object.keys(cart[i])[0]} at ${cart[i][Object.keys(cart[i])[0]}.");
     else if (cart.length ==2){
       
