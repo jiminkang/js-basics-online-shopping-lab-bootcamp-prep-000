@@ -76,7 +76,7 @@ function placeOrder(cardNumber) {
   }
   else{
     var totalPrice=total();
-    console.log(`Your total cost is ${totalPrice}, which will be charged to the card ${cardNumber}`);
+    console.log(`Your total cost is ${totalPrice}, which will be charged to the card ${cardNumber}.`);
     cart =[];
     return cart;
   }
